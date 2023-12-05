@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "primera extension",
+    "version": "1.0",
+    "description": "primera extension chromium",
+    "icons": {
+        "128": "png.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
