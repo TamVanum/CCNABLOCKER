@@ -6,7 +6,7 @@ para instalarlo ve a chrome o algun navegador con base chromium
 como Opera, Vivaldi, Yandex, o incluso la próxima versión del mismísimo Microsoft Edge, etc
 
 luego dirigete al url de extenciones
-
+<br>
 chrome://extensions/
 
 (aun que diga chrome tu navegador deberia redirigirte automaticamente al que corresponde)
