@@ -130,23 +130,22 @@ const preguntasYRespuestas = [
         "indice": 9,
         "titulo": "¿Cuáles son los tres pares de modos de enlace troncal que establecen un enlace troncal funcional entre dos switches Cisco? (Elija tres).",
         "respuestas": [
-            "<span style='color: red;'>DTP dinámico a DTP dinámico</span>",
-            "<span style='color: red;'>DTP dinámico a DTP automático</span>",
-            "DTP automático a DTP automático",
-            "DTP en modo automático a DTP dinámico",
-            "<span style='color: red;'>DTP en modo automático a DTP automático</span>",
-            "DTP automático a DTP en modo automático"
+            "<span style='color: red;'>Dinámico deseado y enlace troncal</span>",
+            "Acceso y dinámico automático",
+            "<span style='color: red;'>Dinámico deseado y dinámico automático</span>",
+            "Acceso y enlace troncal",
+            "Dinámico automático y dinámico automático",
+            "<span style='color: red;'>Dinámico deseado y dinámico deseado</span>",
         ]
     },
     {
         "indice": 10,
-        "titulo": "Consulte la ilustración. Un administrador de red configura el router con la información proporcionada. El router puede hacer ping al switch, pero los usuarios del switch no pueden hacer ping al servidor. ¿Cuál es la causa más probable del problema?",
-        "imagen": "2021-09-30_000104.jpg",
+        "titulo": "Se ha configurado una ruta estática en un router. Sin embargo, la red de destino ya no existe. ¿Qué debe hacer un administrador para eliminar la ruta estática de la tabla de enrutamiento?",
         "respuestas": [
-            "El switch no tiene una ruta predeterminada configurada.",
-            "La interfaz del switch está en la VLAN incorrecta.",
-            "El servidor no tiene una puerta de enlace configurada.",
-            "<span style='color: red;'>El switch no tiene una puerta de enlace configurada.</span>"
+            "Nada. La ruta estática desaparecerá por sí sola",
+            "Cambie la distancia administrativa para esa ruta",
+            "Cambie la métrica de enrutamiento para esa ruta",
+            "<span style='color: red;'>Elimine la ruta usando el comando no ip route.</span>"
         ]
     },
     {
@@ -236,7 +235,7 @@ const preguntasYRespuestas = [
         ]
     },
     {
-        "indice": 19,
+        "indice": 19.1 + " caso 1",
         "titulo": "Un nuevo switch de capa 3 está conectado a un router y se está configurando para el enrutamiento InterVLAN. ¿Cuáles son tres de los cinco pasos necesarios para la configuración? (Escoja tres opciones).",
         "respuestas": [
             "modificando la VLAN predeterminada",
@@ -249,8 +248,47 @@ const preguntasYRespuestas = [
         ]
     },
     {
+        "indice": 19.2 + " caso 2",
+        "titulo": "Un nuevo switch de capa 3 está conectado a un router y se está configurando para el enrutamiento InterVLAN. ¿Cuáles son tres de los cinco pasos necesarios para la configuración? (Escoja tres opciones).",
+        "respuestas": [
+            "<span style='color: red;'>habilitar el routing IP</span>",
+            "<span style='color: red;'>ingresando «sin switchport» en el puerto conectado al router</span>",
+            "ajustando la métrica de ruta",
+            "instalando una ruta estática",
+            "asignando los puertos a la VLAN nativa",
+            "eliminando la VLAN predeterminada",
+            "<span style='color: red;'>asignando puertos a VLANs</span>"
+        ]
+    },
+    {
+        "indice": 19.3 + " caso 3",
+        "titulo": "Un nuevo switch de capa 3 está conectado a un router y se está configurando para el enrutamiento InterVLAN. ¿Cuáles son tres de los cinco pasos necesarios para la configuración? (Escoja tres opciones).",
+        "respuestas": [
+            "<span style='color: red;'>habilitar el routing IP</span>",
+            "eliminando la VLAN predeterminada",
+            "<span style='color: red;'>ingresando «sin switchport» en el puerto conectado al router</span>",
+            "establecimiento de adyacencias",
+            "<span style='color: red;'>asignar puertos a las VLAN</span>",
+            "ajustando la métrica de ruta",
+            "asignar los puertos a la VLAN nativa",
+        ]
+    },
+    {
+        "indice": 19.4 + " caso 4",
+        "titulo": "Un nuevo switch de capa 3 está conectado a un router y se está configurando para el enrutamiento InterVLAN. ¿Cuáles son tres de los cinco pasos necesarios para la configuración? (Escoja tres opciones).",
+        "respuestas": [
+           "establecimiento de adyacencias",
+           "instalando una ruta estática",
+           "ajustando la métrica de ruta",
+           "<span style='color: red;'>creando VLANs</span>",
+           "<span style='color: red;'>asignando puertos a VLANs</span>",
+           "<span style='color: red;'>creando interfaces SVI</span>",
+           "implementar un protocolo de enrutamiento",
+        ]
+    },
+    {
         "indice": 20,
-        "titulo": "Un administrador de red está configurando una WLAN. ¿Por qué cambiaría el administrador las direcciones IPv4 DHCP predeterminadas en un AP?",
+        "titulo": "Un administrador de red esta configurando una WLAN. ¿Por qué cambiaría el administrador las direcciones IPv4 DHCP predeterminadas en un AP?",
         "respuestas": [
             "para restringir el acceso a la WLAN solo por usuarios autorizados y autenticados",
             "para supervisar el funcionamiento de la red inalámbrica",
@@ -315,14 +353,8 @@ const preguntasYRespuestas = [
     },
     {
         "indice": 26,
-        "titulo": "Una la característica de reenvío con su tipo.",
+        "titulo": "Una la característica de reenvío con su tipo. (No se utilizan todas las opciones.)",
         "imagen": "2021-09-30_000658.jpg",
-        "respuestas": [
-            "Relleno de celdas - Conmutación de celdas",
-            "Buffering de entrada - Conmutación de almacenamiento y reenvío",
-            "Conmutación de fragmentos - Conmutación de almacenamiento y reenvío",
-            "Fragmentación de celdas - Conmutación de almacenamiento y reenvío"
-        ]
     },
     {
         "indice": 27,
@@ -410,7 +442,7 @@ const preguntasYRespuestas = [
     },
     {
         "indice": 35,
-        "titulo": "En una página Resumen del WLC 3504 de Cisco ( Avanzado &gt; Resumen ), ¿qué pestaña permite a un administrador de red configurar una WLAN determinada con una directiva WPA2?",
+        "titulo": "En una página Resumen del WLC 3504 de Cisco ( Avanzado > Resumen ), ¿qué pestaña permite a un administrador de red configurar una WLAN determinada con una directiva WPA2?",
         "respuestas": [
             "SEGURIDAD",
             "INALÁMBRICO",
@@ -614,34 +646,23 @@ const preguntasYRespuestas = [
         "indice": 54,
         "titulo": "Una el estado de enlace con el estado de la interfaz y el protocolo. (No se utilizan todas las opciones.)",
         "imagen": "2021-09-30_001949.jpg",
-        "respuestas": [
-            "Enlace: Dinámico, Interfaz: Apagado, Protocolo: Apagado",
-            "Enlace: Desactivado, Interfaz: Desactivado, Protocolo: Desactivado",
-            "<span style='color: red;'>Enlace: Desactivado, Interfaz: Apagado, Protocolo: Apagado</span>",
-            "Enlace: Dinámico, Interfaz: Apagado, Protocolo: Desactivado"
-        ]
     },
     {
         "indice": 55,
         "titulo": "Consulte la ilustración. El host A envió un paquete al host B. ¿Cuáles serán las direcciones MAC e IP de origen en el paquete cuando este llegue al host B?",
         "imagen": "2021-09-30_002059.jpg",
         "respuestas": [
-            "<span style='color: red;'><span style='font-weight: bold;'>MAC de origen: 00E0.FE91.7799</span><br><span style='font-weight: bold;'>IP de origen: 10.1.1.10</span></span>",
-            "MAC de origen: 00E0.FE91.7799\nIP de origen: 10.1.1.1",
-            "MAC de origen: 00E0.FE91.7799\nIP de origen: 192.168.1.1",
-            "MAC de origen: 00E0.FE10.17A3\nIP de origen: 192.168.1.1"
+            "<span>MAC de origen: 00E0.FE91.7799 <br> IP de origen: 10.1.1.1</span>",
+            "<span style='color: red;'>MAC de origen: 00E0.FE91.7799 <br> IP de origen: 10.1.1.10</span>",
+            "<span>MAC de origen: 00E0.FE91.7799 <br> IP de origen: 192.168.1.1</span>",
+            "<span>MAC de origen: 00E0.FE10.17A3 <br> IP de origen: 10.1.1.10</span>",
+            "<span>MAC de origen: 00E0.FE10.17A3 <br> IP de origen: 192.168.1.1</span>",
         ]
     },
     {
         "indice": 56,
         "titulo": "Una la descripción el tipo de VLAN correcto. (No se utilizan todas las opciones.)",
         "imagen": "2021-09-30_002132.jpg",
-        "respuestas": [
-            "VLAN de voz: Asigna tráfico de voz a una VLAN.",
-            "<span style='color: red;'>VLAN nativa: Asigna tráfico no etiquetado a una VLAN.</span>",
-            "VLAN de administración: Asigna tráfico de administración a una VLAN.",
-            "<span style='color: red;'>VLAN de datos: Asigna tráfico de usuario a una VLAN.</span>"
-        ]
     },
     {
         "indice": 57,
@@ -670,13 +691,6 @@ const preguntasYRespuestas = [
         "indice": 59,
         "titulo": "Una los tipos de mensaje DHCP con el orden del proceso de DHCPv4. (No se utilizan todas las opciones).",
         "imagen": "2021-09-30_002352.jpg",
-        "respuestas": [
-            "Mensaje DHCP: Descubrimiento",
-            "Mensaje DHCP: Oferta",
-            "<span style='color: red;'>Mensaje DHCP: Solicitud</span>",
-            "<span style='color: red;'>Mensaje DHCP: Aceptación</span>",
-            "Mensaje DHCP: Liberación"
-        ]
     },
     {
         "indice": 60,
@@ -767,7 +781,7 @@ const preguntasYRespuestas = [
     },
     {
         "indice": 68,
-        "titulo": "Un administrador de red está configurando una WLAN. ¿Por qué el administrador usaría un controlador WLAN?",
+        "titulo": "Un administrador de red esta configurando una WLAN. ¿Por qué el administrador usaría un controlador WLAN?",
         "respuestas": [
             "para proporcionar un servicio priorizado para aplicaciones sensibles al tiempo",
             "para reducir el riesgo de que se añadan AP no autorizados a la red",
@@ -905,7 +919,7 @@ const preguntasYRespuestas = [
     },
     {
         "indice": 81,
-        "titulo": "Consulte la ilustración. ¿Qué hosts recibirán solicitudes de ARP desde el host A, considerando que el puerto Fa0/4 en ambos switches está configurado para llevar tráfico a varias VLAN? (Elija tres opciones).",
+        "titulo": "Consulte la ilustración. ¿Qué hosts recibirán solicitudes de ARP desde el host A, considerando que el puerto Fa0/4 en ambos switches está configurado para llevar tráfico a varias VLAN? (Elija tres opciones.)",
         "imagen": "2021-09-30_164307.jpg",
         "respuestas": [
             "host B",
@@ -1022,6 +1036,16 @@ const preguntasYRespuestas = [
         ]
     },
     {
+        "indice": 91,
+        "titulo": "Un administrador de red utiliza }el comando de configuración global predeterminado portfast bpduguard del árbol de expansión para habilitar la protección BPDU en un switch. Sin embargo, la protección BPDU no está activada en todos los puertos de acceso. ¿Cuál es la causa del problema?",
+        "respuestas": [
+            "Los puertos de acceso pertenecen a diferentes VLAN.",
+            "<span style='color: red;'>PortFast no está configurado en todos los puertos de acceso.</span>",
+            "La protección BPDU debe activarse en el modo de comando de configuración de interfaz.",
+            "Los puertos de acceso configurados con protección raíz no se pueden configurar con protección BPDU."
+        ]
+    },
+    {
         "indice": 92,
         "titulo": "¿Cuáles son los dos protocolos que se usan para proporcionar autenticación de AAA basada en servidor? (Elija dos opciones.)",
         "respuestas": [
@@ -1077,6 +1101,17 @@ const preguntasYRespuestas = [
     {
         "indice": 97,
         "titulo": "Consulte la ilustración. ¿Qué comando static route se puede ingresar en R1 para reenviar tráfico a la LAN conectada a R2?",
+        "imagen": "5-CCNA-2-v7-Examen-Final-Preguntas-y-Respuestas.png",
+        "respuestas": [
+            "ruta ipv6 2001:db8:12:10::/64 S0/0/1 2001:db8:12:10::1",
+            "<span style='color: red;'>ruta ipv6 2001:db8:12:10::/64 S0/0/1 fe80::2</span>",
+            "ruta ipv6 2001:db8:12:10::/64 S0/0/0 fe80::2",
+            "ruta ipv6 2001:db8:12:10::/64 S0/0/0"
+        ]
+    },
+    {
+        "indice": 97,
+        "titulo": "Consulte la ilustración.¿Qué comando static route se puede ingresar en R1 para reenviar tráfico a la LAN conectada a R2?",
         "imagen": "5-CCNA-2-v7-Examen-Final-Preguntas-y-Respuestas.png",
         "respuestas": [
             "ruta ipv6 2001:db8:12:10::/64 S0/0/1 2001:db8:12:10::1",
@@ -1536,7 +1571,7 @@ const preguntasYRespuestas = [
         ]
     },
     {
-        "indice": "_142",
+        "indice": 142,
         "titulo": "Un administrador de red esta configurando una WLAN. ¿Por qué el administrador deshabilitaría la función de difusión para el SSID?",
         "respuestas": [
             "para proporcionar un servicio priorizado para aplicaciones sensibles al tiempo",
@@ -1571,7 +1606,7 @@ const preguntasYRespuestas = [
         "respuestas": [
             "Deshabilita un puerto no utilizado.",
             "Deshabilita todos los puertos troncales.",
-            "Habilita portfast en una interfaz de conmutador específica.",
+            "<span style='color: red;'>Habilita portfast en una interfaz de conmutador específica.</span>",
             "Compara la dirección L2 de origen en el encabezado de Ethernet con la dirección L2 del remitente en el cuerpo de ARP."
         ],
     },
@@ -1581,7 +1616,7 @@ const preguntasYRespuestas = [
         "imagen": "74-CCNA-2-v7-Examen-Final-Preguntas-y-Respuestas.jpg",
         "respuestas": [
             "Trunk1",
-            "<span style='color: rgb(255, 0, 0);'>Trunk2</span>",
+            "<span style='color: red;'>Trunk2</span>",
             "Trunk3",
             "Trunk4"
         ]
@@ -1592,7 +1627,7 @@ const preguntasYRespuestas = [
         "respuestas": [
             "Inhabilite DTP.",
             "Deshabilite STP.",
-            "<span style='color: rgb(255, 0, 0);'>Habilite la seguridad del puerto.</span>",
+            "<span style='color: red;'>Habilite la seguridad del puerto.</span>",
             "Coloque los puertos no utilizados en una VLAN no utilizada."
         ]
     },
@@ -1601,7 +1636,7 @@ const preguntasYRespuestas = [
         "titulo": "¿Qué mensaje DHCPv4 enviará un cliente para aceptar una dirección IPv4 ofrecida por un servidor DHCP?",
         "respuestas": [
             "transmitir DHCPACK",
-            "<span style='color: rgb(255, 0, 0);'>transmite DHCPREQUEST</span>",
+            "<span style='color: red;'>transmite DHCPREQUEST</span>",
             "DHCPACK de unidifusión",
             "unidifusión DHCPREQUEST"
         ]
@@ -1622,7 +1657,7 @@ const preguntasYRespuestas = [
             "HTTP",
             "NetBEUI",
             "POP",
-            "<span style='color: rgb(255, 0, 0);'>SSH</span>"
+            "<span style='color: red;'>SSH</span>"
         ]
     },
     {
@@ -1634,7 +1669,7 @@ const preguntasYRespuestas = [
             "La interfaz de comando GigabitEthernet0/0.5 se ingresó incorrectamente.",
             "No hay una dirección IP configurada en la interfaz Gi0/0.",
             "El comando no shutdown no se ingresa en las subinterfaces.",
-            "<span style='color: rgb(255, 0, 0);'>El comando encapsulation dot1Q 5 contiene la VLAN incorrecta.</span>"
+            "<span style='color: red;'>El comando encapsulation dot1Q 5 contiene la VLAN incorrecta.</span>"
         ]
     },
     {
@@ -1649,8 +1684,8 @@ const preguntasYRespuestas = [
         "indice": "_129",
         "titulo": "Se agregará un nuevo conmutador a una red existente en una oficina remota. El administrador de la red no quiere que los técnicos de la oficina remota puedan agregar nuevas VLAN al switch, pero el conmutador debe recibir actualizaciones de VLAN desde el dominio VTP. ¿Qué dos pasos se deben realizar para configurar VTP en el nuevo conmutador para cumplir con estas condiciones? (Elija dos opciones.)",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>Configure el nuevo conmutador como cliente VTP.</span>",
-            "<span style='color: rgb(255, 0, 0);'>Configure el nombre de dominio del VTP existente en el nuevo conmutador.</span>",
+            "<span style='color: red;'>Configure el nuevo conmutador como cliente VTP.</span>",
+            "<span style='color: red;'>Configure el nombre de dominio del VTP existente en el nuevo conmutador.</span>",
             "Configure una dirección IP en el nuevo conmutador.",
             "Configure todos los puertos de ambos conmutadores en modo de acceso.",
             "Habilite la poda de VTP."
@@ -1663,15 +1698,15 @@ const preguntasYRespuestas = [
             "Cree rutas estáticas a todas las redes internas y una ruta predeterminada a Internet.",
             "Cree rutas estáticas adicionales a la misma ubicación con un AD de 1.",
             "Verifique las estadísticas de la ruta predeterminada para ver si hay sobresaturación.",
-            "<span style='color: rgb(255, 0, 0);'>Verifique la tabla de enrutamiento para ver si falta una ruta estática.</span>"
+            "<span style='color: red;'>Verifique la tabla de enrutamiento para ver si falta una ruta estática.</span>"
         ]
     },
     {
         "indice": "_135",
         "titulo": "¿Cuáles son las dos características del switch que podrían ayudar a aliviar la congestión de la red? (Elija dos opciones.)",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>cambio interno rápido</span>",
-            "<span style='color: rgb(255, 0, 0);'>búferes de marcos grandes</span>",
+            "<span style='color: red;'>cambio interno rápido</span>",
+            "<span style='color: red;'>búferes de marcos grandes</span>",
             "cambio de almacenamiento y reenvío",
             "baja densidad de puertos",
             "verificación de secuencia de verificación de cuadros (FCS)"
@@ -1682,7 +1717,7 @@ const preguntasYRespuestas = [
         "titulo": "¿Cuál es el resultado de conectar dos o más conmutadores juntos?",
         "respuestas": [
             "Se aumenta la cantidad de dominios de transmisión.",
-            "<span style='color: rgb(255, 0, 0);'>Se aumenta el tamaño del dominio de transmisión.</span>",
+            "<span style='color: red;'>Se aumenta el tamaño del dominio de transmisión.</span>",
             "Se reduce la cantidad de dominios de colisión.",
             "Se aumenta el tamaño del dominio de colisión."
         ]
@@ -1695,14 +1730,14 @@ const preguntasYRespuestas = [
             "La VLAN nativa debe ser VLAN 60.",
             "La VLAN nativa se está eliminando del enlace.",
             "El tronco se ha configurado con el comando switchport nonegotiate.",
-            "<span style='color: rgb(255, 0, 0);'>La VLAN que utiliza la PC-A no está en la lista de VLAN permitidas en el tronco.</span>"
+            "<span style='color: red;'>La VLAN que utiliza la PC-A no está en la lista de VLAN permitidas en el tronco.</span>"
         ]
     },
     {
         "indice": "_145",
         "titulo": "Un administrador de red está configurando una WLAN. ¿Por qué el administrador deshabilitaría la función de transmisión para el SSID?",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>para eliminar a los forasteros que buscan SSID disponibles en el área</span>",
+            "<span style='color: red;'>para eliminar a los forasteros que buscan SSID disponibles en el área</span>",
             "para centralizar la administración de múltiples WLAN",
             "para facilitar la configuración grupal y la administración de múltiples WLAN a través de un WLC",
             "para proporcionar un servicio prioritario para aplicaciones urgentes"
@@ -1714,7 +1749,7 @@ const preguntasYRespuestas = [
         "respuestas": [
             "para eliminar a los forasteros que buscan SSID disponibles en el área",
             "para reducir el riesgo de que se agreguen puntos de acceso no autorizados a la red",
-            "<span style='color: rgb(255, 0, 0);'>para reducir que personas externas intercepten datos o accedan a la red inalámbrica mediante el uso de un rango de direcciones conocido</span>",
+            "<span style='color: red;'>para reducir que personas externas intercepten datos o accedan a la red inalámbrica mediante el uso de un rango de direcciones conocido</span>",
             "para reducir el riesgo de interferencia de dispositivos externos como hornos microondas"
         ]
     },
@@ -1722,7 +1757,7 @@ const preguntasYRespuestas = [
         "indice": "_158",
         "titulo": "¿Qué dirección y longitud de prefijo se utiliza al configurar una ruta estática predeterminada IPv6?",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>::/0</span>",
+            "<span style='color: red;'>::/0</span>",
             "FF02::1/8",
             "0.0.0.0/0",
             "::1/128"
@@ -1733,9 +1768,9 @@ const preguntasYRespuestas = [
         "titulo": "¿Cuáles son dos características de Cisco Express Forwarding (CEF)? (Elija dos opciones.)",
         "respuestas": [
             "Cuando un paquete llega a la interfaz de un enrutador, se reenvía al plano de control donde la CPU hace coincidir la dirección de destino con una entrada de la tabla de enrutamiento correspondiente.",
-            "<span style='color: rgb(255, 0, 0);'>Este es el mecanismo de reenvío más rápido en los enrutadores y conmutadores multicapa de Cisco.</span>",
+            "<span style='color: red;'>Este es el mecanismo de reenvío más rápido en los enrutadores y conmutadores multicapa de Cisco.</span>",
             "Con este método de conmutación, la información de flujo de un paquete se almacena en la caché de conmutación rápida para reenviar paquetes futuros al mismo destino sin la intervención de la CPU.",
-            "<span style='color: rgb(255, 0, 0);'>Los paquetes se reenvían según la información de la FIB y una tabla de adyacencia.</span>",
+            "<span style='color: red;'>Los paquetes se reenvían según la información de la FIB y una tabla de adyacencia.</span>",
             "Cuando un paquete llega a la interfaz de un enrutador, se reenvía al plano de control donde la CPU busca una coincidencia en la caché de conmutación rápida."
         ]
     },
@@ -1745,7 +1780,7 @@ const preguntasYRespuestas = [
         "respuestas": [
             "agente",
             "suplicante",
-            "<span style='color: rgb(255, 0, 0);'>autenticador</span>",
+            "<span style='color: red;'>autenticador</span>",
             "servidor de autenticación"
         ]
     },
@@ -1753,7 +1788,7 @@ const preguntasYRespuestas = [
         "indice": "_161",
         "titulo": "¿Qué solución de Cisco ayuda a prevenir la suplantación de ARP y los ataques de envenenamiento de ARP?",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>Inspección dinámica de ARP</span>",
+            "<span style='color: red;'>Inspección dinámica de ARP</span>",
             "IP Source Guard",
             "Inspección de DHCP",
             "Seguridad del puerto"
@@ -1766,7 +1801,7 @@ const preguntasYRespuestas = [
             "PVST + optimiza el rendimiento en la red mediante la selección automática del puente raíz.",
             "PVST + reduce el consumo de ancho de banda en comparación con las implementaciones tradicionales de STP que utilizan CST.",
             "PVST + requiere menos ciclos de CPU para todos los conmutadores de la red.",
-            "<span style='color: rgb(255, 0, 0);'>PVST + optimiza el rendimiento en la red mediante el uso compartido de la carga.</span>"
+            "<span style='color: red;'>PVST + optimiza el rendimiento en la red mediante el uso compartido de la carga.</span>"
         ]
     },
     {
@@ -1775,7 +1810,7 @@ const preguntasYRespuestas = [
         "respuestas": [
             "Agregue más conmutadores para que haya menos dispositivos en un switch en particular.",
             "Reemplace los conmutadores con conmutadores que tengan más puertos por conmutador. Esto permitirá que haya más dispositivos en un switch en particular.",
-            "<span style='color: rgb(255, 0, 0);'>Segmente la LAN en LAN más pequeñas y enrute entre ellas.</span>",
+            "<span style='color: red;'>Segmente la LAN en LAN más pequeñas y enrute entre ellas.</span>",
             "Reemplace al menos la mitad de los conmutadores con concentradores para reducir el tamaño del dominio de transmisión."
         ]
     },
@@ -1784,7 +1819,7 @@ const preguntasYRespuestas = [
         "titulo": "¿Qué define una ruta de host en un router Cisco?",
         "respuestas": [
             "La dirección de enlace local se agrega automáticamente a la tabla de enrutamiento como una ruta de host IPv6.",
-            "<span style='color: rgb(255, 0, 0);'>Una configuración de ruta de host estática IPv4 utiliza una dirección IP de destino de un dispositivo específico y una máscara de subred/32.</span>",
+            "<span style='color: red;'>Una configuración de ruta de host estática IPv4 utiliza una dirección IP de destino de un dispositivo específico y una máscara de subred/32.</span>",
             "Una ruta de host se designa con una C en la tabla de enrutamiento.",
             "Una ruta de host IPv6 estática debe incluir el tipo de interfaz y el número de interfaz del router del siguiente salto."
         ]
@@ -1796,25 +1831,25 @@ const preguntasYRespuestas = [
             "distancia administrativa",
             "dirección IP del router vecino",
             "número de red y máscara de subred en la interfaz del router vecino",
-            "<span style='color: rgb(255, 0, 0);'>número y tipo de interfaz</span>"
+            "<span style='color: red;'>número y tipo de interfaz</span>"
         ]
     },
     {
         "indice": "_169",
         "titulo": "Un técnico está configurando una red inalámbrica para una pequeña empresa utilizando un enrutador inalámbrico SOHO. ¿Qué dos métodos de autenticación se utilizan si el enrutador está configurado con WPA2? (Elija dos opciones.)",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>personal</span>",
+            "<span style='color: red;'>personal</span>",
             "AES",
             "TKIP",
             "WEP",
-            "<span style='color: rgb(255, 0, 0);'>empresa</span>"
+            "<span style='color: red;'>empresa</span>"
         ]
     },
     {
         "indice": "_170",
         "titulo": "¿Qué técnica de mitigación evitaría que los servidores no autorizados proporcionen parámetros de configuración de IPv6 falsos a los clientes?",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>habilitando DHCPv6 Guard</span>",
+            "<span style='color: red;'>habilitando DHCPv6 Guard</span>",
             "habilitar RA Guard",
             "implementación de seguridad de puertos en puertos de borde",
             "deshabilitar CDP en los puertos de borde"
@@ -1824,11 +1859,11 @@ const preguntasYRespuestas = [
         "indice": "_171",
         "titulo": "Una PC ha enviado un mensaje RS a un enrutador IPv6 conectado a la misma red. ¿Qué dos datos enviará el enrutador al cliente? (Elija dos opciones.)",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>longitud del prefijo</span>",
+            "<span style='color: red;'>longitud del prefijo</span>",
             "máscara de subred en notación decimal con puntos",
             "nombre de dominio",
             "distancia administrativa",
-            "<span style='color: rgb(255, 0, 0);'>prefijo</span>",
+            "<span style='color: red;'>prefijo</span>",
             "dirección IP del servidor DNS"
         ]
     },
@@ -1838,7 +1873,7 @@ const preguntasYRespuestas = [
         "respuestas": [
             "mixto",
             "pasivo",
-            "<span style='color: rgb(255, 0, 0);'>activo</span>",
+            "<span style='color: red;'>activo</span>",
             "abierto"
         ]
     },
@@ -1846,11 +1881,11 @@ const preguntasYRespuestas = [
         "indice": "_173",
         "titulo": "¿Qué tres componentes se combinan para formar un ID de puente?",
         "respuestas": [
-            "<span style='color: rgb(255, 0, 0);'>ID de sistema extendido</span>",
+            "<span style='color: red;'>ID de sistema extendido</span>",
             "costo",
             "dirección IP",
-            "<span style='color: rgb(255, 0, 0);'>prioridad de puente</span>",
-            "<span style='color: rgb(255, 0, 0);'>dirección MAC</span>",
+            "<span style='color: red;'>prioridad de puente</span>",
+            "<span style='color: red;'>dirección MAC</span>",
             "ID de puerto"
         ]
     }
