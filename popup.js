@@ -8,6 +8,7 @@ const preguntasEncontradasContainer = document.querySelector('#preguntas-encontr
 
 // ...
 
+
 // Agregar un evento click al botón de búsqueda
 boton.addEventListener('click', () => {
     // Obtener el valor del input de búsqueda

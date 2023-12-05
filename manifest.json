@@ -1,15 +1,13 @@
 {
     "manifest_version": 3,
-    "name": "primera extension",
+    "name": "AdBlocker",
     "version": "1.0",
-    "description": "primera extension chromium",
+    "description": "ccblockerna",
     "icons": {
         "128": "png.png"
     },
     "action": {
         "default_popup": "popup.html"
     },
-    "permissions": [
-        "activeTab"
-    ]
+    "permissions": ["tabs"]
 }
