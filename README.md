@@ -1,4 +1,4 @@
-# CCNABLOCKER
+# CCNABLOCKER <img src="https://www.shutterstock.com/image-vector/adblock-red-stop-sign-icon-600nw-353113937.jpg" alt="icon" height="60px" />
 
 Pido disculpas por las fotos, pero no hay de otra jua jua jua
 
