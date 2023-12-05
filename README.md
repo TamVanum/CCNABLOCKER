@@ -13,4 +13,4 @@ luego activa el modo desarrollador y presiona en cargar extension sin empaquetar
 
 selecciona el archivo y listo.
 
-<img src="https://ak.uecdn.es/p/108/thumbnail/entry_id/0_3c4ynsbq/width/660/cache_st/1683708396/type/2/bgcolor/000000/0_3c4ynsbq.jpg" alt="comisteichon ccna" width="200"/>
+<img src="https://ak.uecdn.es/p/108/thumbnail/entry_id/0_3c4ynsbq/width/660/cache_st/1683708396/type/2/bgcolor/000000/0_3c4ynsbq.jpg" alt="comisteichon ccna" width="100%"/>
