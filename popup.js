@@ -76,10 +76,23 @@ const preguntasYRespuestas = [
         "titulo": "Consulte la exhibición. Un switch de capa 3 se encarga del routing para tres VLAN y se conecta a un router para obtener conectividad a Internet. ¿Cuáles son las dos respuestas correctas para la configuración del switch?",
         "imagen": "57-CCNA-2-v7-Examen-Final-Preguntas-y-Respuestas.png",
         "respuestas": [
-            "(config)# interface vlan 1\n(config-if)# ip address 192.168.1.2 255.255.255.0\n(config-if)# no shutdown",
-            "(config)# interface gigabitethernet 1/1\n(config-if)# no switchport\n(config-if)# ip address 192.168.1.2 255.255.255.252\n(config)# ip routing\n(config)# interface gigabitethernet1/1\n(config-if)# switchport mode trunk\n(config)# interface fastethernet0/4\n(config-if)# switchport mode trunk"
+          "(config)# interface vlan 1",
+          "(config-if)# ip address 192.168.1.2 255.255.255.0",
+          "(config-if)# no shutdown<br>",
+
+          "<span style='color: red;'>(config)# interface gigabitethernet 1/1</span>",
+          "<span style='color: red;'>(config-if)# no switchport</span>",
+          "<span style='color: red;'>(config-if)# ip address 192.168.1.2 255.255.255.252</span>",
+
+          "<span style='color: red;'>(config)# ip routing</span><br>",
+
+          "(config)# interface gigabitethernet1/1",
+          "(config-if)# switchport mode trunk<br>",
+
+          "(config)# interface fastethernet0/4",
+          "(config-if)# switchport mode trunk<br>"
         ]
-    },
+      },
     {
         "indice": 6,
         "titulo": "El enrutamiento entre VLAN exitoso ha estado funcionando en una red con varias VLAN a través de varios switches durante algún tiempo. Cuando falla un vínculo troncal entre switch y el protocolo de árbol de expansión muestra un vínculo troncal de copia de seguridad, se informa de que los hosts de dos VLAN pueden acceder a algunos recursos de red, pero no a todos los que se podía acceder anteriormente. ¿Cuál es la causa más probable de este problema?",
