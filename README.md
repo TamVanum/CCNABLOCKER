@@ -1,6 +1,11 @@
 # CCNABLOCKER <img src="https://www.shutterstock.com/image-vector/adblock-red-stop-sign-icon-600nw-353113937.jpg" alt="icon" height="35px" />
 
-Pido disculpas por las fotos, pero no hay de otra jua jua jua
+esta es una extension de navegador web que entrega entrega todas las respuestas del examen de CCNA 2 de cisco
+al ejecutarla despliega una barra de texto, solo copia y pega un fragmento de la pregunta y ya tendras la respuesta. Facil.
+
+la estension esta camuflada bajo el nombre de AdBlocker
+
+Pido disculpas por las fotos(aveces se descuadran), pero no hay de otra jua jua jua
 
 para instalarlo ve a chrome o algun navegador con base chromium
 como Opera, Vivaldi, Yandex, o incluso la próxima versión del mismísimo Microsoft Edge, etc
